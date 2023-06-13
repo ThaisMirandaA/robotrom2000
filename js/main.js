@@ -1,24 +1,5 @@
-const imagemAmarela = 'img/robotron_amarelo.png';
-const imagemAzul = 'img/robotron_azul.png';
-const imagemBranca = 'img/robotron_branco.png';
-const imagemPreta = 'img/robotron_preto.png';
-const imagemRosa = 'img/robotron_rosa.png';
-const imagemVermelha = 'img/robotron_vermelho.png';
-
 function mudaImagem(id) {
-    if (id == "amarelo") {
-        document.querySelector('[data-imagem]').src = imagemAmarela;
-    } else if (id == "azul") {
-        document.querySelector('[data-imagem]').src = imagemAzul;
-    } else if (id == "branco") {
-        document.querySelector('[data-imagem]').src = imagemBranca;
-    } else if (id == "preto") {
-        document.querySelector('[data-imagem]').src = imagemPreta;
-    } else if (id == "rosa") {
-        document.querySelector('[data-imagem]').src = imagemRosa;
-    } else if (id == "vermelho") {
-        document.querySelector('[data-imagem]').src = imagemVermelha;
-    }
+    document.querySelector('[data-imagem]').src = 'img/robotron_' + id + '.png'; 
 }
 
 const controle = document.querySelectorAll('[data-controle]');
